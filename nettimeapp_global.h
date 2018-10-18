@@ -1,0 +1,12 @@
+#ifndef NETTIMEAPP_GLOBAL_H
+#define NETTIMEAPP_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(NETTIMEAPP_LIBRARY)
+#  define NETTIMEAPPSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define NETTIMEAPPSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // NETTIMEAPP_GLOBAL_H
